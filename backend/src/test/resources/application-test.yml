@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:school;MODE=MySQL;DB_CLOSE_DELAY=-1
+    username: sa
+    password: ""
+    driver-class-name: org.h2.Driver
+
+app:
+  bootstrap:
+    email: ""
+    password: ""
+  jwt:
+    secret: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+
+management:
+  health:
+    mail:
+      enabled: false
+
+server:
+  address: 127.0.0.1
